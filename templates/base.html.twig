@@ -17,9 +17,9 @@
 		rel="alternate" type="application/rss+xml" title="{{ 'rss.title'|trans }}" href="{{ path('blog_rss') }}">
 
 		{#
-				            Those two blocks defines frontend entrypoint for CSS and JavaScript assets
-				            See https://symfony.com/doc/current/frontend.html
-				        #}
+								            Those two blocks defines frontend entrypoint for CSS and JavaScript assets
+								            See https://symfony.com/doc/current/frontend.html
+								        #}
 		{% block stylesheets %}{% endblock %}
 		{% block javascripts %}
 			{% block importmap %}
@@ -63,7 +63,7 @@
 								{% endblock %}
 
 								<li class="nav-item{{ _route == 'blog_search' ? ' active' : '' }}">
-									<a class="nav-link" href="{{ path('blog_search') }}">
+									<a class="nav-link" href="{{ path('user_edit') }}">
 										<i class="fa fa-search"></i>
 										{{ 'menu.search'|trans }}</a>
 								</li>
@@ -76,7 +76,7 @@
 											<span class="sr-only">{{ app.user.fullname }}</span>
 										</a>
 										<div class="dropdown-menu user" role="menu" aria-labelledby="user">
-											<a class="dropdown-item" href="{{ path('user_edit') }}">
+											<a class="dropdown-item" href="{{ path('blog_search') }}">
 												<i class="fa fa-edit" aria-hidden="true"></i>
 												{{ 'menu.user'|trans }}
 											</a>
@@ -134,10 +134,10 @@
 						</div>
 						<div id="footer-resources" class="col-md-6">
 							<p>
-								<a rel="noopener noreferrer" target="_blank" href="https://twitter.com/symfony" title="Symfony on X (formerly Twitter)">
+								<a rel="noopener noreferrer" target="_blank" href="https://symfony.com/blog/" title="Symfony on X (formerly Twitter)">
 									<i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
 								</a>
-								<a target="_blank" href="https://symfony.com/blog/" title="Symfony Blog">
+								<a target="_blank" href="https://twitter.com/symfony" title="Symfony Blog">
 									<i class="fa-solid fa-rss" aria-hidden="true"></i>
 								</a>
 							</p>
@@ -148,8 +148,8 @@
 		{% endblock %}
 
 		{# it's not mandatory to set the timezone in localizeddate(). This is done to
-				           avoid errors when the 'intl' PHP extension is not available and the application
-				           is forced to use the limited "intl polyfill", which only supports UTC and GMT #}
+								           avoid errors when the 'intl' PHP extension is not available and the application
+								           is forced to use the limited "intl polyfill", which only supports UTC and GMT #}
 		<!-- Page rendered on {{ 'now'|format_datetime('long', 'long', '', 'UTC') }} -->
 	</body>
 </html>

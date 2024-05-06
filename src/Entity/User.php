@@ -53,6 +53,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $username = null;
 
     #[ORM\Column(type: Types::STRING, unique: true)]
+    #[Assert\NotBlank()]
     #[Assert\Email]
     private ?string $email = null;
 

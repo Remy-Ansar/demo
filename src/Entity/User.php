@@ -65,6 +65,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(type: Types::JSON)]
     private array $roles = [];
 
+    // partie get et set 
+
     public function getId(): ?int
     {
         return $this->id;

@@ -1,5 +1,5 @@
 :root {
-  --blue: #007bff;
+  --blue: blue;
 }
 
 /* Page: 'Backend post index'
@@ -15,15 +15,15 @@ body#admin_post_index .item-actions a.btn+a.btn {
 /* Page: 'Backend post show'
    ------------------------------------------------------------------------- */
 body#admin_post_show .post-tags .label-default {
-  background-color: #103f3f;
-  color: #c445ce;
+  background-color: green;
+  color: purple;
   font-size: 16px;
   margin-right: 10px;
   padding: .4em 1em .5em;
 }
 
 body#admin_post_show .post-tags .label-default i {
-  color: #95A6A7;
+  color: pink;
 }
 
 .form-control {

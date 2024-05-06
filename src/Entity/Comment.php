@@ -64,6 +64,9 @@ class Comment
         return !$containsInvalidCharacters;
     }
 
+
+    // partie get et set 
+
     public function getId(): ?int
     {
         return $this->id;

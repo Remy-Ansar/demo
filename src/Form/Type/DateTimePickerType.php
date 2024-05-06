@@ -41,11 +41,11 @@ final class DateTimePickerType extends AbstractType
                 // Attributes for flatpickr usage
                 'data-flatpickr-class' => 'standard',
                 'data-date-locale' => u(\Locale::getDefault())->replace('_', '-')->lower(),
-                'data-date-format' => 'Y-m-d H:i',
+                'data-date-format' => 'Y-m-d H:i:s',
             ],
             'format' => 'yyyy-MM-dd HH:mm',
-            'input_format' => 'Y-m-d H:i',
-            'date_format' => 'Y-m-d H:i',
+            'input_format' => 'Y-m-d H:i:s',
+            'date_format' => 'Y-m-d H:i:s',
         ]);
     }
 

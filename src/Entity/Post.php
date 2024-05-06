@@ -88,6 +88,8 @@ class Post
         $this->tags = new ArrayCollection();
     }
 
+    // partie get et set 
+
     public function getId(): ?int
     {
         return $this->id;

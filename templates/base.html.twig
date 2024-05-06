@@ -17,9 +17,9 @@
 		rel="alternate" type="application/rss+xml" title="{{ 'rss.title'|trans }}" href="{{ path('blog_rss') }}">
 
 		{#
-		            Those two blocks defines frontend entrypoint for CSS and JavaScript assets
-		            See https://symfony.com/doc/current/frontend.html
-		        #}
+				            Those two blocks defines frontend entrypoint for CSS and JavaScript assets
+				            See https://symfony.com/doc/current/frontend.html
+				        #}
 		{% block stylesheets %}{% endblock %}
 		{% block javascripts %}
 			{% block importmap %}
@@ -148,8 +148,8 @@
 		{% endblock %}
 
 		{# it's not mandatory to set the timezone in localizeddate(). This is done to
-		           avoid errors when the 'intl' PHP extension is not available and the application
-		           is forced to use the limited "intl polyfill", which only supports UTC and GMT #}
+				           avoid errors when the 'intl' PHP extension is not available and the application
+				           is forced to use the limited "intl polyfill", which only supports UTC and GMT #}
 		<!-- Page rendered on {{ 'now'|format_datetime('long', 'long', '', 'UTC') }} -->
 	</body>
 </html>
